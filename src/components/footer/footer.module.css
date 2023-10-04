@@ -1,0 +1,111 @@
+.container {
+  height: auto; /* Adjust height to fit content */
+  width: 100%;
+  padding: 2.5rem 0; /* Add padding to top and bottom */
+  margin-top: 7.5rem;
+  display: flex;
+  flex-direction: column; /* Change to a vertical layout */
+  align-items: center; /* Center content horizontally */
+}
+
+.wrapper {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap */
+  justify-content: space-between;
+  align-items: flex-start; /* Align columns to the top */
+}
+
+/* Existing CSS for the footer */
+/* ... */
+
+.col {
+    /* Existing styles */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .title {
+    /* Change the color of the headings to an attractive color */
+    color: #ff6600;
+    margin-bottom: 16px;
+    text-align: center; /* Center-align the headings */
+  }
+  
+  /* Adjust the margin and padding for the FAQ list */
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    list-style: none;
+    margin-left: 20px; /* Add left margin to FAQ list */
+    padding-left: 0; /* Remove left padding */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .list > li {
+    color: #777;
+    font-size: 18px;
+  }
+  
+  /* ... Rest of the CSS remains the same */
+  
+
+.col:nth-child(2) {
+  align-items: center;
+}
+
+.col:last-child {
+  align-items: flex-end;
+}
+
+
+
+
+.list > .workingTime {
+  color: #000;
+  font-size: 20px;
+}
+
+.list > .workingTime:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.iconList {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 30px;
+  list-style: none;
+  cursor: pointer;
+  transition: 150ms all;
+  margin-top: 1rem; /* Add margin to the icon list */
+}
+
+.iconList > *:hover {
+  color: #444;
+}
+
+.attribution {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+  align-items: flex-start;
+  gap: 12px;
+  margin-left: 12.5rem;
+  margin-top: 1rem; /* Adjust top margin */
+  padding-bottom: 2.5rem;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: #222;
+  transition: 150ms all;
+}
+
+.attribution a:hover {
+  color: #777;
+}

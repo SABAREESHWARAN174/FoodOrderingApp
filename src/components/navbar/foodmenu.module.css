@@ -1,0 +1,108 @@
+.foodMenu {
+    text-align: center;
+    padding: 40px;
+    margin-left: 80px;
+  }
+  
+  .title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .foods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .food {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .food:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .imgContainer {
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .foodTitle {
+    font-size: 20px;
+    margin: 10px 0;
+    text-transform: capitalize;
+  }
+  
+  .foodDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .rating {
+    margin: auto 0;
+    font-size: 16px;
+    font-weight: 300;
+    color: red;
+    align-items: center;
+    align-content: center;
+  }
+  
+  .price {
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 300;
+    color: red;
+    align-items: center;
+    align-content: center;
+  }
+
+  /* YourComponent.module.css */
+.goToRestaurantsButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #ff5733; /* Button background color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .goToRestaurantsButton:hover {
+    font-size: 20px; /* Increased font size on hover */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow on hover */
+    background-color: #ff4500; /* Darker background color on hover */
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .goToRestaurantsLink {
+    text-decoration: none; /* Remove underline from the link */
+    color: inherit; /* Inherit the text color from the button */
+  }
+  
+  
+  /* Media query for responsiveness (adjust as needed) */
+  @media (max-width: 768px) {
+    .foods {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+  

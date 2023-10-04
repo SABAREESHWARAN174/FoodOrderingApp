@@ -1,0 +1,110 @@
+.container{
+    height: 100%;
+    width: 100%;
+    margin: 5rem 0;
+    margin-top: 7.5rem;
+    padding-top: 5rem;
+}
+
+.wrapper{
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f00;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.foods{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.food{
+    text-decoration: none;
+    color: inherit;
+}
+
+.food > h4{
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 26px;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+
+.imgContainer{
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+}
+
+.imgContainer > img{
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 250ms all ease-in-out;
+}
+
+.imgContainer > img:hover{
+    scale: 1.1;
+}
+
+/* Add this to your login.module.css */
+
+.subtitle {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    color: #333;
+    margin-top: 1rem;
+    animation: blink 1s infinite alternate, marquee 10s linear infinite;
+    transition: color 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a text shadow for attraction */
+  }
+  
+  /* Blinking Animation */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  /* Hover Effect */
+  .subtitle:hover {
+    color: #f00; /* Change text color on hover to your preferred color */
+    text-shadow: 4px 4px 6px rgba(255, 0, 0, 0.4); /* Add a stronger text shadow on hover */
+  }
+  
+  /* Marquee Effect */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,0 +1,221 @@
+/* Container for the navigation bar */
+.container {
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #d3c5c5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #987e7e; /* Set the background to light black */
+    z-index: 10;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+    transition: background-color 300ms ease-in-out;
+  }
+
+  .logo {
+    height: 100px; /* Set a fixed height for the logo */
+    width: auto;
+    transition: transform 320ms ease-in-out;
+    margin-left: -20px; /* Add margin to the left side of the logo */
+  }
+
+/* Center section of the navigation bar */
+.center {
+  flex: 1;
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+/* List styles for navigation links */
+.listItem {
+  font-size: 17px;
+  color: #444;
+  font-weight: bold; /* Make the button fonts bold */
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: 150ms all;
+  padding: 10px 20px; /* Add padding for button-like appearance */
+  border-radius: 8px; /* Add border-radius for button-like appearance */
+}
+
+.cartContainer {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Style for the buttons */
+.buttonLink {
+  background-color: orangered; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: 2px solid rgb(252, 167, 8); /* Add a border */
+  border-radius: 8px; /* Add border-radius for button-like appearance */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the button fonts bold */
+  transition: background-color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+
+/* ... Rest of the styles ... */
+
+/* List styles for navigation links */
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px; /* Increased spacing between tabs and buttons */
+  }
+
+/* ... Rest of the styles ... */
+
+/* Right section of the navigation bar */
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    align-items: center; /* Align items vertically */
+  }
+
+/* ... Rest of the styles ... */
+
+  
+  /* Apply a subtle box shadow when scrolled */
+  .scrolled {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 300ms ease-in-out;
+  }
+  
+  /* Wrapper for content alignment */
+  .wrapper {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Left section of the navigation bar */
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Title and logo styles */
+  .title {
+    text-decoration: none;
+    color: #ff5236;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 10px;
+    transition: transform 150ms ease-in-out;
+  }
+  
+  /* Logo styles */
+  
+
+/* Add hover effect to buttons */
+.buttonLink:hover {
+  background-color: #ff5236; /* Brighter background color on hover */
+  border-color: #ff5236; /* Change border color on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  transition: background-color 150ms ease-in-out, transform 150ms ease-in-out, border-color 150ms ease-in-out;
+}
+
+/* Logout button styles */
+.logoutButton {
+  font-weight: bold;
+  background-color: orangered; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 12px 20px; /* Button padding */
+  border: 2px solid rgb(252, 167, 8); /* Add a border */
+  border-radius: 8px; /* Add border-radius for button-like appearance */
+  text-decoration: none; /* Remove underline from links */
+   /* Make the button fonts bold */
+  width: 100px; /* Set a fixed width for all buttons (adjust as needed) */
+  transition: background-color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+/* Profile button styles */
+.profileButton {
+  background-color: orangered; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: 2px solid rgb(252, 167, 8); /* Add a border */
+  border-radius: 8px; /* Add border-radius for button-like appearance */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the button fonts bold */
+  width: 90px; /* Set a fixed width for all buttons (adjust as needed) */
+  transition: background-color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+/* Cart button styles */
+.cartButton {
+  background-color: orangered; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 7px 20px; /* Button padding */
+  border: 2px solid rgb(252, 167, 8); /* Add a border */
+  border-radius: 8px; /* Add border-radius for button-like appearance */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make the button fonts bold */
+  width: 90px; /* Set a fixed width for all buttons (adjust as needed) */
+  transition: background-color 150ms ease-in-out, transform 150ms ease-in-out;
+}
+
+
+/* Add hover effect to buttons */
+.logoutButton:hover,
+.profileButton:hover,
+.cartButton:hover {
+  background-color: #ff6f61; /* Brighter color on hover */
+  border: 2px solid rgb(252, 167, 8); 
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+ 
+  
+  
+  .userIcon,
+  .cartIcon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Cart quantity badge styles */
+  .cartQuantity {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #ff5236;
+    color: #fff;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+  
+  
+  
+ 
+  
+  /* Smaller logo styles */
+  .smallLogo {
+    width: 30px;
+    height: auto;
+    transition: transform 150ms ease-in-out;
+  }
+ 
+
+  
